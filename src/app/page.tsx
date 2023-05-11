@@ -7,7 +7,7 @@ export default function Home() {
       <section>
         <Introduction />
       </section>
-      <section>
+      <section id="sobremi">
         <AboutMe />
       </section>
     </main>

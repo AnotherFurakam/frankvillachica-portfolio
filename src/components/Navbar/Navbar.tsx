@@ -4,6 +4,7 @@ import CurriculumBtn from "./CurriculumBtn";
 import { HiBars3, HiOutlineXMark } from 'react-icons/hi2'
 import MobileNavMenu from "./MobileMenu";
 import { AnimatePresence } from "framer-motion";
+import { Link } from "react-scroll";
 
 export interface NavbarProps {
 }
@@ -63,10 +64,18 @@ const Navbar: React.FC<NavbarProps> = () => {
 						<HiOutlineXMark className="md:hidden text-skyblue text-[35px] hover:text-electricblue cursor-pointer z-20" onClick={handleToggleMobileMenu} />
 				}
 				<ul className="hidden md:flex gap-[20px] items-center text-[15px]">
-					<li className="text-skyblue hover:text-electricblue cursor-default">Sobre mi</li>
-					<li className="text-skyblue hover:text-electricblue cursor-default">Habilidades</li>
-					<li className="text-skyblue hover:text-electricblue cursor-default">Proyectos</li>
-					<li className="text-skyblue hover:text-electricblue cursor-default">Contacto</li>
+					<li className="text-skyblue hover:text-electricblue cursor-default">
+						<Link to="sobremi" smooth duration={500}>Sobre mi</Link>
+					</li>
+					<li className="text-skyblue hover:text-electricblue cursor-default">
+						<Link to="habilidades" smooth duration={200}>Habilidades</Link>
+					</li>
+					<li className="text-skyblue hover:text-electricblue cursor-default">
+						<Link to="proyectos" smooth duration={200}>Proyectos</Link>
+					</li>
+					<li className="text-skyblue hover:text-electricblue cursor-default">
+						<Link to="contacto" smooth duration={200}>Contacto</Link>
+					</li>
 					<CurriculumBtn />
 				</ul>
 			</nav>
