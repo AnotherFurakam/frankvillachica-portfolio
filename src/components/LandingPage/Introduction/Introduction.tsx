@@ -10,7 +10,7 @@ export type IntroductionProps = {
 const Introduction: React.FC<IntroductionProps> = () => {
 	return (
 		<article className='flex-col md:flex-row flex justify-center md:justify-between h-[calc(100vh-70px)] min-h-[650px] px-4 lg:px-0 max-w-[1000px] mx-auto gap-10 md:gap-0 md:pb-[100px]'>
-			<Reveal>
+			<Reveal duration={.5} y={20}>
 				<div className='flex items-center h-full'>
 					<div>
 						<span className='text-peach text-[clamp(25px,5vw,30px)] font-normal'>Hola</span>
@@ -23,7 +23,7 @@ const Introduction: React.FC<IntroductionProps> = () => {
 					</div>
 				</div>
 			</Reveal>
-			<Reveal delay={.2}>
+			<Reveal duration={.5} x={20} delay={.5}>
 				<div className='flex justify-center items-center h-full'>
 					<div className='flex md:flex-col gap-[25px] text-[35px] text-lavender'>
 						<a href="" className='hover:translate-y-[-4px] transition-all delay-75'><BsInstagram className='hover:text-electricblue' /></a>

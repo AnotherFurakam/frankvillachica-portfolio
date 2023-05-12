@@ -1,5 +1,6 @@
 import { AboutMe } from "@/components/LandingPage/AboutMe";
 import { Introduction } from "@/components/LandingPage/Introduction";
+import { Skills } from "@/components/LandingPage/Skills";
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
       </section>
       <section id="sobremi">
         <AboutMe />
+      </section>
+      <section id="habilidades">
+        <Skills />
       </section>
     </main>
   )

@@ -45,17 +45,17 @@ const MobileNavMenu: FC<MobileNavbarProps> = ({ closeHandler }) => {
         </Link>
       </li>
       <li className="text-skyblue hover:text-electricblue cursor-default">
-        <Link to=''>
+        <Link to='habilidades' smooth delay={200} onClick={() => closeHandler(true)}>
           Habilidades
         </Link>
       </li>
       <li className="text-skyblue hover:text-electricblue cursor-default">
-        <Link to=''>
+        <Link to='proyectos' smooth delay={200} onClick={() => closeHandler(true)}>
           Proyectos
         </Link>
       </li>
       <li className="text-skyblue hover:text-electricblue cursor-default">
-        <Link to=''>
+        <Link to='contacto' smooth delay={200} onClick={() => closeHandler(true)}>
           Contacto
         </Link>
       </li>

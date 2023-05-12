@@ -68,13 +68,13 @@ const Navbar: React.FC<NavbarProps> = () => {
 						<Link to="sobremi" smooth duration={500}>Sobre mi</Link>
 					</li>
 					<li className="text-skyblue hover:text-electricblue cursor-default">
-						<Link to="habilidades" smooth duration={200}>Habilidades</Link>
+						<Link to="habilidades" smooth duration={500}>Habilidades</Link>
 					</li>
 					<li className="text-skyblue hover:text-electricblue cursor-default">
-						<Link to="proyectos" smooth duration={200}>Proyectos</Link>
+						<Link to="proyectos" smooth duration={500}>Proyectos</Link>
 					</li>
 					<li className="text-skyblue hover:text-electricblue cursor-default">
-						<Link to="contacto" smooth duration={200}>Contacto</Link>
+						<Link to="contacto" smooth duration={500}>Contacto</Link>
 					</li>
 					<CurriculumBtn />
 				</ul>
