@@ -14,13 +14,14 @@ const AboutMe: React.FC<AboutMeProps> = () => {
 	const toggleReadMore = () => setReadMore(!readMore)
 
 	return (
-		<article className='flex max-w-[1000px] mx-auto h-[calc(100vh-70px)] min-h-[650px] px-4 lg:px-0 pb-[100px]'>
-			<Reveal delay={.4}>
+		<article className='flex max-w-[1000px] mx-auto h-auto md:h-[calc(100vh-70px)] min-h-[650px] px-4 lg:px-0 pb-[80px] md:pb-0 md:mb-[60px] md:pt-[100px]'>
+			<Reveal y={20} duration={.7} delay={.1}>
 				<div className='flex flex-col gap-[20px] md:gap-[40px] my-auto'>
 					<h2 className='text-peach text-[32px] capitalize font-normal'>sobre mi</h2>
 					<div className='flex flex-col-reverse md:flex-row gap-[30px]'>
-						<div className='w-[250px] min-w-[250px] h-[250px] relative mx-auto'>
-							<Image src={'https://res.cloudinary.com/furakam/image/upload/v1675621495/furafolio/profile/conejo_cirfwy.jpg'} fill alt='frankvillachica.png' />
+						<div className='w-[250px] min-w-[250px] h-[250px] relative mx-auto overflow-hidden rounded-md shadow-[-4px_4px_5px_2px_rgba(205,166,131,0.2)] rotate-1 hover:rotate-0 translate-y-2 hover:translate-y-0 transition-all delay-[100ms_easy-in]'>
+							<div className='w-full h-full bg-oceanblue bg-opacity-40 absolute z-10 hover:bg-opacity-0 transition-all delay-[100ms_easy-in]'></div>
+							<Image src={'https://res.cloudinary.com/furakam/image/upload/v1675621495/furafolio/profile/conejo_cirfwy.jpg'} fill alt='frankvillachica.png' className='z-0' />
 						</div>
 						<div className='w-full max-w-[650px] flex flex-col gap-[30px]'>
 							<div className='flex flex-col gap-2'>
