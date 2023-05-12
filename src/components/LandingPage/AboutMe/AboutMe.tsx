@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { WhatsAppButton } from '../WhatsAppButton';
-import { Reveal } from '@/components/Reveal';
+import { Reveal } from '@/components/Animation/Reveal';
 
 export type AboutMeProps = {
 }

@@ -1,5 +1,5 @@
 "use client"
-import { Reveal } from '@/components/Reveal';
+import { Reveal } from '@/components/Animation/Reveal';
 import React from 'react';
 import { BsGithub, BsInstagram } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
