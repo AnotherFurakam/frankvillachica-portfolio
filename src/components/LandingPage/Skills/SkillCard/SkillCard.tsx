@@ -1,7 +1,6 @@
 "use client"
-import React from 'react';
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
-import { Variants, motion } from "framer-motion";
+import { Children } from '@/components/Animation/Appear/Children';
 
 export interface SkillCardProps {
 	title: string
@@ -15,26 +14,13 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, stars, icon }) => {
 		<AiFillStar size={18} key={index} />
 	))
 
-	const unfilledStars = Array.from({ length: 5 - (stars > 5 ? 5 : stars)}, (_, index) => (<AiOutlineStar size={18} key={index} />))
-
-	const variants: Variants = {
-		hidden: {
-			opacity: 0,
-			y: 20,
-		},
-		show: {
-			opacity: 1,
-			y: 0,
-			transition: {
-				duration: .3,
-			}
-		}
-	}
+	const unfilledStars = Array.from({ length: 5 - (stars > 5 ? 5 : stars) }, (_, index) => (<AiOutlineStar size={18} key={index} />))
 
 	return (
-		<motion.div
-			variants={variants}
-			>
+		<Children
+			duration={.3}
+			y={20}
+		>
 			<div className='text-skyblue hover:text-lavender bg-oxfordblue hover:bg-coolblack p-[15px] rounded-[2px] flex items-center justify-center gap-[10px] cursor-default transition-all delay-[100ms_ease-in]'>
 				<figure className='w-[37px] flex items-center'>
 					{icon}
@@ -51,7 +37,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, stars, icon }) => {
 					</div>
 				</div>
 			</div>
-		</motion.div>
+		</Children>
 	);
 };
 

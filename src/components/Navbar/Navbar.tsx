@@ -5,6 +5,8 @@ import { HiBars3, HiOutlineXMark } from 'react-icons/hi2'
 import MobileNavMenu from "./MobileMenu";
 import { AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
+import { Parent } from "../Animation/Appear/Parent";
+import { Children } from "../Animation/Appear/Children";
 
 export interface NavbarProps {
 }
@@ -55,30 +57,46 @@ const Navbar: React.FC<NavbarProps> = () => {
 
 	return (
 		<header className={`w-full bg-oceanblue bg-opacity-75 backdrop-blur-md sticky ${visible ? 'top-0' : 'top-[-70px]'} transition-all delay-100 ${withShadow ? 'shadow-xl' : ''} z-10 relative`}>
-			<nav className="flex w-full justify-between p-[15px] h-[70px] items-center relative">
-				<span className="text-electricblue text-[34px]">Furakam</span>
-				{
-					!isOpenMobileMenu ?
-						<HiBars3 className="md:hidden text-skyblue text-[35px] hover:text-electricblue cursor-pointer z-20" onClick={handleToggleMobileMenu} />
-						:
-						<HiOutlineXMark className="md:hidden text-skyblue text-[35px] hover:text-electricblue cursor-pointer z-20" onClick={handleToggleMobileMenu} />
-				}
-				<ul className="hidden md:flex gap-[20px] items-center text-[15px]">
-					<li className="text-skyblue hover:text-electricblue cursor-default">
-						<Link to="sobremi" smooth duration={500}>Sobre mi</Link>
-					</li>
-					<li className="text-skyblue hover:text-electricblue cursor-default">
-						<Link to="habilidades" smooth duration={500}>Habilidades</Link>
-					</li>
-					<li className="text-skyblue hover:text-electricblue cursor-default">
-						<Link to="proyectos" smooth duration={500}>Proyectos</Link>
-					</li>
-					<li className="text-skyblue hover:text-electricblue cursor-default">
-						<Link to="contacto" smooth duration={500}>Contacto</Link>
-					</li>
-					<CurriculumBtn />
-				</ul>
-			</nav>
+			<Parent delayChildren={.2} staggerChildren={.2}>
+				<nav className="flex w-full justify-between p-[15px] h-[70px] items-center relative">
+					<Children duration={.7} x={10}>
+						<span className="text-electricblue text-[34px]">Furakam</span>
+					</Children>
+					{
+						!isOpenMobileMenu ?
+							<HiBars3 className="md:hidden text-skyblue text-[35px] hover:text-electricblue cursor-pointer z-20" onClick={handleToggleMobileMenu} />
+							:
+							<HiOutlineXMark className="md:hidden text-skyblue text-[35px] hover:text-electricblue cursor-pointer z-20" onClick={handleToggleMobileMenu} />
+					}
+					<ul className="hidden md:flex gap-[20px] items-center text-[15px]">
+						<li className="text-skyblue hover:text-electricblue cursor-default">
+							<Children duration={.7} x={10}>
+								<Link to="sobremi" smooth duration={500}>Sobre mi</Link>
+							</Children>
+						</li>
+						<li className="text-skyblue hover:text-electricblue cursor-default">
+							<Children duration={.7} x={10}>
+								<Link to="habilidades" smooth duration={500}>Habilidades</Link>
+							</Children>
+						</li>
+						<li className="text-skyblue hover:text-electricblue cursor-default">
+							<Children duration={.7} x={10}>
+								<Link to="proyectos" smooth duration={500}>Proyectos</Link>
+							</Children>
+						</li>
+						<li className="text-skyblue hover:text-electricblue cursor-default">
+							<Children duration={.7} x={10}>
+								<Link to="contacto" smooth duration={500}>Contacto</Link>
+							</Children>
+						</li>
+						<li>
+							<Children duration={.7} x={10}>
+								<CurriculumBtn />
+							</Children>
+						</li>
+					</ul>
+				</nav>
+			</Parent>
 			<AnimatePresence>
 				{
 					isOpenMobileMenu ?
