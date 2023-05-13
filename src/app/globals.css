@@ -9,9 +9,3 @@
 }
 @tailwind components;
 @tailwind utilities;
-
-/* Fix Swipper wrap height to view row items */
-
-.swiper-wrapper {
-  height: fit-content !important;
-}

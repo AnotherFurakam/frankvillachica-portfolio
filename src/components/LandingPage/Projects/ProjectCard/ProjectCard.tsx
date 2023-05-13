@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = () => {
 			</div>
 			<div>
 				<h3 className={`${isHovered ? 'text-electricblue' : 'text-lavender'} text-[24px] font-bold`}>Título</h3>
-				<p className='text-lavender w-full h-[95px] md:h-[100px] overflow-hidden line-clamp-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aliquam hic amet enim error nobis dolor? Amet laborum possimus nesciunt repellat doloremque, commodi maiores. Tempora voluptates perferendis harum aliquam iure?</p>
+				<p className='text-lavender w-full h-[93px] md:h-[100px] overflow-hidden line-clamp-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aliquam hic amet enim error nobis dolor? Amet laborum possimus nesciunt repellat doloremque, commodi maiores. Tempora voluptates perferendis harum aliquam iure?</p>
 			</div>
 			<div className='flex gap-[5px] justify-end w-full'>
 				<span className={`${isHovered ? 'text-electricblue' : 'text-skyblue'}`}>Next.js</span>

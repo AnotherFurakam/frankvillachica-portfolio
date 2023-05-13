@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`${sen.variable} font-sen bg-oceanblue scrollbar-thin scrollbar-thumb-cornflowerblue`}>
+      <body className={`${sen.variable} font-sen bg-oceanblue scrollbar-thin scrollbar-thumb-cornflowerblue`} suppressHydrationWarning ={true}>
         <Navbar />
         {
         children

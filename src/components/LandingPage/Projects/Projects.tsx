@@ -79,104 +79,109 @@ const Projects: React.FC<ProjectsProps> = () => {
 						</div>
 					</div>
 				</Reveal>
-				<Swiper
-					onBeforeInit={(swiper) => {
-						swiperRef.current = swiper
-					}}
-					allowTouchMove={false}
-					breakpoints={{
-						0: {
-							slidesPerView: 1,
-							slidesPerGroup: 1,
-							spaceBetween: 50,
-							grid: {
-								rows: 2,
-								fill: "row"
+				<div className='h-[650px]'>
+					<Swiper
+						onBeforeInit={(swiper) => {
+							swiperRef.current = swiper
+						}}
+						allowTouchMove={false}
+						breakpoints={{
+							0: {
+								slidesPerView: 1,
+								slidesPerGroup: 1,
+								spaceBetween: 50,
+								grid: {
+									rows: 2,
+									fill: "row"
+								},
+								autoHeight: true,
+							},
+							750: {
+								slidesPerView: 2,
+								slidesPerGroup: 2,
+								spaceBetween: 50,
+								grid: {
+									rows: 2,
+									fill: "row"
+								},
+								autoHeight: true,
+							},
+							1120: {
+								slidesPerView: 3,
+								slidesPerGroup: 3,
+								spaceBetween: 50,
+								grid: {
+									rows: 2,
+									fill: "row"
+								},
+								autoHeight: true,
 							}
-						},
-						750: {
-							slidesPerView: 2,
-							slidesPerGroup: 2,
-							spaceBetween: 50,
-							grid: {
-								rows: 2,
-								fill: "row"
-							}
-						},
-						1120: {
-							slidesPerView: 3,
-							slidesPerGroup: 3,
-							spaceBetween: 50,
-							grid: {
-								rows: 2,
-								fill: "row"
-							}
-						}
-					}}
-					modules={[Grid]}
-					className='mySwiper w-full max-w-[1000px] h-auto pt-[30px_!important]'
-				>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Children duration={.2} y={5}>
-							<ProjectCard />
-						</Children>
-					</SwiperSlide>
-				</Swiper>
+						}}
+						modules={[Grid]}
+						className='w-full max-w-[1000px] h-[100%_!important] pt-[30px_!important]'
+					>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+						<SwiperSlide>
+							<Children duration={.2} y={5}>
+								<ProjectCard />
+							</Children>
+						</SwiperSlide>
+					</Swiper>
+				</div>
 			</Parent>
 
 		</article>
