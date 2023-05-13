@@ -13,7 +13,7 @@ export type SkillsProps = {
 
 const Skills: React.FC<SkillsProps> = () => {
 	return (
-		<article className='flex max-w-[1000px] mx-auto h-auto md:h-[calc(100vh-70px)] min-h-[650px] px-4 lg:px-0 pt-[20px] md:pt-0'>
+		<article className='flex max-w-[1000px] mx-auto h-auto lg:h-[calc(100vh-70px)] min-h-[650px] px-4 lg:px-0 pb-[80px] md:pb-0 md:mb-[60px] md:pt-[100px]'>
 			<div className='flex flex-col gap-[20px] w-full'>
 				<Reveal duration={.7} y={20}>
 					<h2 className='text-peach text-[32px] capitalize font-normal'>Habilidades</h2>
