@@ -21,7 +21,7 @@ const Projects: React.FC<ProjectsProps> = () => {
 	const swiperRef = useRef<SwiperType>();
 
 	const [prevButtonDisable, setPrevButtonDisable] = useState<boolean | null>(true)
-	const [nextButtonDisable, setNextButtonDisable] = useState<boolean | null>(false)
+	const [nextButtonDisable, setNextButtonDisable] = useState<boolean | null>(true)
 
 	const handlePrevSlide = () => {
 		swiperRef.current?.slidePrev()
@@ -33,14 +33,32 @@ const Projects: React.FC<ProjectsProps> = () => {
 
 	useEffect(() => {
 		if (swiperRef.current) {
+			//Detectando si hay mas de 6 slides para desabilitar o habilitar el boton
+			if (swiperRef.current.slides.length > 6) {
+				setPrevButtonDisable(swiperRef.current.isBeginning);
+				setNextButtonDisable(false)
+			}
 
+			//Detectando si hay slides fuera del borde
 			swiperRef.current.on('fromEdge', () => {
 				setPrevButtonDisable(false);
 				setNextButtonDisable(false);
 			})
+
+			//Detectando cuando la transición ya termino y modificando el estado de los botones
 			swiperRef.current.on('slideChangeTransitionEnd', () => {
 				setPrevButtonDisable(swiperRef.current?.isBeginning ?? true);
-				setNextButtonDisable(swiperRef.current?.isEnd ?? true);
+				setNextButtonDisable(swiperRef.current?.isEnd ?? false);
+			})
+
+			//Detectando el evento de cada cada breakpoint, si recivimos el paramentro event podremos saber tambien en que numero de breackpoint nos encontramos (ese número es de tipo string)
+			swiperRef.current.on('breakpoint', () => {
+
+				//Detectamos el evento cuando se termina la transición de los slides, es decir que esto se ejecuta cuando termina de acomodarse los slides despues de que un breackpoint se ejecute
+				swiperRef.current?.on('transitionEnd', () => {
+					setPrevButtonDisable(swiperRef.current?.isBeginning ?? true);
+					setNextButtonDisable(swiperRef.current?.isEnd ?? true);
+				})
 			})
 		}
 	}, [])
