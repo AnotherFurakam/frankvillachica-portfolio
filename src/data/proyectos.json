@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "Baza website",
+    "description": "Página web hecha en Next.js y tailwind para el centro psicoterapeútico Baza con el fin de dar a conocer la empresa y los servicios que este ofrece asi como permitir al cliente ponerse en contacto con la misma. Es 100% responsive y se cuidó el SEO haciendo uso de los metadatos y html semántico. Por preferencias del cliente, el repositorio es privado",
+    "technologies": ["Typescript","Next.js","Tailwind CSS"],
+    "github_link": null,
+    "deploy_link": "https://centropsicoterapeuticobaza.com"
+  },
+  {
+    "id": 2,
+    "title": "Mascotas API",
+    "description": "Proyecto hecho en Java con Springboot y haciendo uso del servicio cloudinary para el almacenamiento de imágenes en la nube y MySql para guardar los datos de las mascotas. Este proyecto fue realizado con fines académicos con la intención de realizar el uso de microservicios en springboot.",
+    "technologies": ["Java","Springboot","Cloudinary","MySql"],
+    "github_link": "https://github.com/AnotherFurakam/MascotasCloudinarySpring",
+    "deploy_link": null
+  },
+  {
+    "id": 3,
+    "title": "Mascotas App",
+    "description": "Proyecto frontend hecho en React y typescript con el fin de consumir el servicio de Mascotas API. Se hizo uso de Bootstrap para los estilos, styled components para estilizar componentes de forma mas personalizados, Yup y formik para la validación y gestión de formularios y react router dom para el manejo de rutas",
+    "technologies": ["React","Typescript", "Bootstrap"],
+    "github_link": "https://github.com/AnotherFurakam/MascotasFrontend/tree/main",
+    "deploy_link": null
+  },
+  {
+    "id": 4,
+    "title": "PukYati Web",
+    "description": "Página web de una tienda de videojuegos. Proyecto realizado con HTML, Bootstrap y JavaScript con el fin de practicar maquetación web y mejorar el uso del framework CSS Bootstrap.",
+    "technologies": ["Html 5","Bootstrap", "Javascript"],
+    "github_link": "https://github.com/AnotherFurakam/PukYati",
+    "deploy_link": null
+  },
+  {
+    "id": 5,
+    "title": "Pasarela Dressy API",
+    "description": "Proyecto backend de una tienda de ropa. Realizado con fines académicos en el lenguaje Java con Springboot, MySql como base de datos, spring security 3 y Swagger para la documentación de la API. Tambien hace uso de microservicios (Springboot Mail API y Springboot Cloudinary API) creados especialmente para este proyecto.",
+    "technologies": ["Java","Springboot","MySql"],
+    "github_link": "https://github.com/AnotherFurakam/Pasarela-Dressy-Bakend-Spring-boot",
+    "deploy_link": null
+  },
+  {
+    "id": 6,
+    "title": "Pasarela Dressy Web",
+    "description": "Proyecto frontend que consume Pasarela Dressy Backend. Hecho en Next.js con tailwindcss, Framer motion, Zustand para el manejo de estados globales, formik con yup para la gestión y validacion de formalarios y Axios para las peticiones HTTP realizadas a la API.",
+    "technologies": ["Typescript","Next.js","Tailwind CSS"],
+    "github_link": "https://github.com/AnotherFurakam/PasarelaDressyNextJS",
+    "deploy_link": null
+  },
+  {
+    "id": 7,
+    "title": "Anime web",
+    "description": "Proyecto académico simple realizado con Html5, Javascript y Bootstrap 100% responsive. Se trata de una web de anime en el que se consume la API Jikan para obtener la información de los ánimes en la página principal.",
+    "technologies": ["Html 5","Javascript", "Bootstrap"],
+    "github_link": null,
+    "deploy_link": null
+  },
+  {
+    "id": 8,
+    "title": "El Fogoso",
+    "description": "Proyecto académico simple realizado con Html5 y CSS 100% responsive. Se trata de una web para una pollería. Este proyecto fue realizado como tarea del instituto ",
+    "technologies": ["Html 5","CSS", "Javascript"],
+    "github_link": null,
+    "deploy_link": null
+  },
+  {
+    "id": 9,
+    "title": "Hotel Babilonia",
+    "description": "Proyecto académico simple realizado con Html5 y CSS 100% responsive. Se trata de una web para un hotel. Este proyecto fue realizado como tarea del instituto.",
+    "technologies": ["Html 5","CSS"],
+    "github_link": null,
+    "deploy_link": null
+  },
+  {
+    "id": 10,
+    "title": "CM Garments Backend",
+    "description": "Proyecto Backend de nivel académico hecho en NestJs con PostgreSQL y TypeORM. Se trata de un servicio hecho para una tienda de ropa y otros artículos importandos",
+    "technologies": ["Typescript","NestJs","PostgreSQL"],
+    "github_link": "https://github.com/AnotherFurakam/cmgarments-backend",
+    "deploy_link": null
+  },
+  {
+    "id": 11,
+    "title": "CM Garments Frontend",
+    "description": "Proyecto Frontend de nivel académico hecho en Next.js con Tailwind CSS, Axios para las peticiones Http, Zustand para el manejo de estados globales, Formik y Yup para la gestión y validación de formularios.",
+    "technologies": ["Next.js","Typescript", "Tailwind CSS"],
+    "github_link": "https://github.com/AnotherFurakam/cmgarments-frontend",
+    "deploy_link": null
+  },
+  {
+    "id": 12,
+    "title": "El Karibe",
+    "description": "Proyecto Frontend de nivel académico hecho en React con  Typescript, Bootstrap, Formik, Yup, Framer motion, SweetAlert, Styled components. Este poryecto de nivel académico trata de una interfaz de administración para el Restaurante y picantería el Karibe.",
+    "technologies": ["Typescript","React","Bootstrap"],
+    "github_link": "https://github.com/AnotherFurakam/KaribeFront/tree/main",
+    "deploy_link": null
+  }
+]

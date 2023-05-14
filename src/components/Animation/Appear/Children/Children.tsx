@@ -6,9 +6,10 @@ export interface ChildrenProps {
 	duration: number
 	x?: number
 	y?: number
+	className?: string
 }
 
-const Children: React.FC<ChildrenProps> = ({ children, x, y, duration }) => {
+const Children: React.FC<ChildrenProps> = ({ children, x, y, duration, className }) => {
 	const variants: Variants = {
 		hidden: {
 			opacity: 0,
@@ -27,6 +28,7 @@ const Children: React.FC<ChildrenProps> = ({ children, x, y, duration }) => {
 	return (
 		<motion.div
 			variants={variants}
+			className={className}
 		>
 			{
 				children

@@ -8,9 +8,10 @@ export interface ParentProps {
 	children: React.ReactNode
 	delayChildren: number
 	staggerChildren: number
+	className?: string
 }
 
-const Parent: React.FC<ParentProps> = ({ children, delayChildren, staggerChildren }) => {
+const Parent: React.FC<ParentProps> = ({ children, delayChildren, staggerChildren, className }) => {
 	const variants: Variants = {
 		hidden: {
 			opacity: 0
@@ -44,6 +45,7 @@ const Parent: React.FC<ParentProps> = ({ children, delayChildren, staggerChildre
 			initial="hidden"
 			animate={mainControls}
 			ref={ref}
+			className = {className}
 		>
 			{
 				children
