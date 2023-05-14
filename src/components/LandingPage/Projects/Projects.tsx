@@ -58,7 +58,6 @@ const Projects: React.FC<ProjectsProps> = () => {
 
 			//Detectando el evento de cada cada breakpoint, si recivimos el paramentro event podremos saber tambien en que numero de breackpoint nos encontramos (ese número es de tipo string)
 			swiperRef.current.on('breakpoint', () => {
-
 				//Detectamos el evento cuando se termina la transición de los slides, es decir que esto se ejecuta cuando termina de acomodarse los slides despues de que un breackpoint se ejecute
 				swiperRef.current?.on('transitionEnd', () => {
 					setPrevButtonDisable(swiperRef.current?.isBeginning ?? true);
@@ -69,7 +68,7 @@ const Projects: React.FC<ProjectsProps> = () => {
 	}, [])
 
 	return (
-		<article className='flex max-w-[1000px] mx-auto h-auto md:h-[calc(100vh-70px)] min-h-[650px] px-4 lg:px-0 pb-[80px] md:pb-0 md:mb-[60px] pt-[20px] md:pt-[100px] overflow-hidden'>
+		<article className='flex max-w-[1000px] mx-auto h-auto lg:h-[calc(100vh-70px)] min-h-[650px] px-4 lg:px-0 pb-[80px] md:pb-0 md:mb-[60px] pt-[20px] md:pt-[100px] overflow-hidden'>
 			<Parent delayChildren={.2} staggerChildren={.2} className='w-full flex flex-col'>
 				<Reveal y={20} duration={.7}>
 					<div className='flex justify-between'>
@@ -89,9 +88,9 @@ const Projects: React.FC<ProjectsProps> = () => {
 						onBeforeInit={(swiper) => {
 							swiperRef.current = swiper
 						}}
-						allowTouchMove={false}
 						breakpoints={{
 							0: {
+								allowTouchMove: true,
 								slidesPerView: 1,
 								slidesPerGroup: 1,
 								spaceBetween: 50,
@@ -102,6 +101,7 @@ const Projects: React.FC<ProjectsProps> = () => {
 								autoHeight: true,
 							},
 							750: {
+								allowTouchMove: false,
 								slidesPerView: 2,
 								slidesPerGroup: 2,
 								spaceBetween: 50,
@@ -112,6 +112,7 @@ const Projects: React.FC<ProjectsProps> = () => {
 								autoHeight: true,
 							},
 							1120: {
+								allowTouchMove: false,
 								slidesPerView: 3,
 								slidesPerGroup: 3,
 								spaceBetween: 50,
@@ -128,7 +129,7 @@ const Projects: React.FC<ProjectsProps> = () => {
 						{
 							projects.map((project) => (
 								<SwiperSlide key={project.id}>
-									<Children duration={.2} y={5}>
+									<Children duration={.4} y={20}>
 										<ProjectCard project={project} />
 									</Children>
 								</SwiperSlide>

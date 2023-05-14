@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 	const handleHoverOut = () => setIsHovered(false)
 
 	return (
-		<div className='w-full h-auto min-h-[260px] bg-coolblack p-[15px] rounded-[5px] flex flex-col gap-[15px] hover:translate-y-[-5px] transition-all delay-[100ms_ease-in] cursor-pointer z-20' onMouseEnter={handleHoverIn} onMouseLeave={handleHoverOut}>
+		<div className='w-full max-h-[260px] bg-coolblack p-[15px] rounded-[5px] flex flex-col gap-[15px] hover:translate-y-[-5px] transition-all delay-[100ms_ease-in] cursor-pointer z-20' onMouseEnter={handleHoverIn} onMouseLeave={handleHoverOut}>
 			<div className={`flex gap-[10px] items-center w-full`}>
 				<span className={`${isHovered ? 'bg-electricblue' : 'bg-lavender'} w-full h-[2px] my-[14px]`}></span>
 				{

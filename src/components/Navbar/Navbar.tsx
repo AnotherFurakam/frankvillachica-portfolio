@@ -86,7 +86,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 						</li>
 						<li className="text-skyblue hover:text-electricblue cursor-default">
 							<Children duration={.7} x={10}>
-								<Link to="contacto" smooth duration={500}>Contacto</Link>
+								<Link to="contacto" smooth duration={500} offset={100}>Contacto</Link>
 							</Children>
 						</li>
 						<li>

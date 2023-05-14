@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/Navbar'
 import './globals.css'
 import { Sen } from 'next/font/google'
+import { Footer } from '@/components/Footer'
 
 const sen = Sen(
   {
@@ -29,6 +30,7 @@ export default function RootLayout({
         {
         children
         }
+        <Footer />
       </body>
     </html>
   )
