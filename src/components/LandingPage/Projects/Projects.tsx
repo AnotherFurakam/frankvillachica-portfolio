@@ -6,17 +6,22 @@ import { ProjectCard } from './ProjectCard';
 import { Reveal } from '@/components/Animation/Reveal';
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import data from "@/data/proyectos.json";
+
 import "swiper/css"
 import "swiper/css/grid"
 
 import { Grid, Swiper as SwiperType } from "swiper";
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { Children } from '@/components/Animation/Appear/Children';
+import { IProject } from '@/interface/project.interface';
 
 export type ProjectsProps = {
 }
 
 const Projects: React.FC<ProjectsProps> = () => {
+
+	const projects: IProject[] = data
 
 	const swiperRef = useRef<SwiperType>();
 
@@ -64,7 +69,7 @@ const Projects: React.FC<ProjectsProps> = () => {
 	}, [])
 
 	return (
-		<article className='flex max-w-[1000px] mx-auto h-auto md:h-[calc(100vh-70px)] min-h-[650px] px-4 lg:px-0 pb-[80px] md:pb-0 md:mb-[60px] md:pt-[100px] overflow-hidden'>
+		<article className='flex max-w-[1000px] mx-auto h-auto md:h-[calc(100vh-70px)] min-h-[650px] px-4 lg:px-0 pb-[80px] md:pb-0 md:mb-[60px] pt-[20px] md:pt-[100px] overflow-hidden'>
 			<Parent delayChildren={.2} staggerChildren={.2} className='w-full flex flex-col'>
 				<Reveal y={20} duration={.7}>
 					<div className='flex justify-between'>
@@ -120,66 +125,15 @@ const Projects: React.FC<ProjectsProps> = () => {
 						modules={[Grid]}
 						className='w-full max-w-[1000px] h-[100%_!important] pt-[30px_!important]'
 					>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Children duration={.2} y={5}>
-								<ProjectCard />
-							</Children>
-						</SwiperSlide>
+						{
+							projects.map((project) => (
+								<SwiperSlide key={project.id}>
+									<Children duration={.2} y={5}>
+										<ProjectCard project={project} />
+									</Children>
+								</SwiperSlide>
+							))
+						}
 					</Swiper>
 				</div>
 			</Parent>
