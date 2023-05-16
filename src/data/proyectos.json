@@ -58,18 +58,18 @@
   {
     "id": 8,
     "title": "El Fogoso",
-    "description": "Proyecto académico simple realizado con Html5 y CSS 100% responsive. Se trata de una web para una pollería. Este proyecto fue realizado como tarea del instituto ",
+    "description": "Proyecto académico simple realizado con Html5 y CSS 100% responsive. Se trata de una web para una pollería. Este proyecto fue realizado como tarea del instituto",
     "technologies": ["Html 5","CSS", "Javascript"],
-    "github_link": null,
-    "deploy_link": null
+    "github_link": "https://github.com/AnotherFurakam/El-Fogoso",
+    "deploy_link": "https://elfogosoweb.netlify.app/"
   },
   {
     "id": 9,
     "title": "Hotel Babilonia",
     "description": "Proyecto académico simple realizado con Html5 y CSS 100% responsive. Se trata de una web para un hotel. Este proyecto fue realizado como tarea del instituto.",
     "technologies": ["Html 5","CSS"],
-    "github_link": null,
-    "deploy_link": null
+    "github_link": "https://github.com/AnotherFurakam/HotelBabilonia-Web",
+    "deploy_link": "https://hotelbabiloniaweb.netlify.app/"
   },
   {
     "id": 10,
