@@ -15,11 +15,11 @@ const Hero: React.FC<HeroProps> = () => {
 				<div className='flex items-center h-full'>
 					<div>
 						<span className='text-peach text-[clamp(25px,5vw,30px)] font-normal'>Hola</span>
-						<h1 className='text-electricblue text-[clamp(38px,7vw,55px)] font-bold'>Soy Frank Villachica.</h1>
-						<h2 className='text-lavender text-[clamp(38px,7vw,55px)] font-bold'>Desarrollador Web Junior.</h2>
+						<h1 className='text-electricblue text-[clamp(38px,7vw,55px)] font-bold'>Soy Frank Villachica</h1>
+						<h2 className='text-lavender text-[clamp(38px,7vw,55px)] font-bold'>Desarrollador Web</h2>
 						<h3 className='text-skyblue text-[clamp(30px,5vw,40px)] font-bold'>Lima - Perú</h3>
 						<p className='text-lavender text-[clamp(16px,2vw,17px)] font-normal max-w-[620px]'>
-							Mi meta es convertirme en un desarrollador web <span className='text-electricblue'>fullstack</span> capas de construir soluciones web de calidad. Espero que mi perfil sea lo que buscas y podamos trabajar juntos.
+							Autodidacta y apasionado, siempre en busca de nuevos desafíos. Me encanta aprender y crecer constantemente. Dispuesto a aportar mi entusiasmo y compromiso en nuevos proyectos.
 						</p>
 					</div>
 				</div>
