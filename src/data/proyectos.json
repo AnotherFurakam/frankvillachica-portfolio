@@ -29,7 +29,7 @@
     "description": "Página web de una tienda de videojuegos. Proyecto realizado con HTML, Bootstrap y JavaScript con el fin de practicar maquetación web y mejorar el uso del framework CSS Bootstrap.",
     "technologies": ["Html 5","Bootstrap", "Javascript"],
     "github_link": "https://github.com/AnotherFurakam/PukYati",
-    "deploy_link": null
+    "deploy_link": "https://pukyatiweb.netlify.app/soporte.html"
   },
   {
     "id": 5,
@@ -52,24 +52,24 @@
     "title": "Anime web",
     "description": "Proyecto académico simple realizado con Html5, Javascript y Bootstrap 100% responsive. Se trata de una web de anime en el que se consume la API Jikan para obtener la información de los ánimes en la página principal.",
     "technologies": ["Html 5","Javascript", "Bootstrap"],
-    "github_link": null,
-    "deploy_link": null
+    "github_link": "https://github.com/AnotherFurakam/AnimeParadise",
+    "deploy_link": "https://aniparadise.netlify.app/"
   },
   {
     "id": 8,
     "title": "El Fogoso",
-    "description": "Proyecto académico simple realizado con Html5 y CSS 100% responsive. Se trata de una web para una pollería. Este proyecto fue realizado como tarea del instituto ",
+    "description": "Proyecto académico simple realizado con Html5 y CSS 100% responsive. Se trata de una web para una pollería. Este proyecto fue realizado como tarea del instituto",
     "technologies": ["Html 5","CSS", "Javascript"],
-    "github_link": null,
-    "deploy_link": null
+    "github_link": "https://github.com/AnotherFurakam/El-Fogoso",
+    "deploy_link": "https://elfogosoweb.netlify.app/"
   },
   {
     "id": 9,
     "title": "Hotel Babilonia",
     "description": "Proyecto académico simple realizado con Html5 y CSS 100% responsive. Se trata de una web para un hotel. Este proyecto fue realizado como tarea del instituto.",
     "technologies": ["Html 5","CSS"],
-    "github_link": null,
-    "deploy_link": null
+    "github_link": "https://github.com/AnotherFurakam/HotelBabilonia-Web",
+    "deploy_link": "https://hotelbabiloniaweb.netlify.app/"
   },
   {
     "id": 10,
