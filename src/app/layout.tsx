@@ -18,9 +18,29 @@ export const metadata: Metadata = {
   keywords: ["Frank Villachica", "Frank Jordan Villachica Gaspar", "Frank Villachica Gaspar", "Desarrollador web junior", "Desarrollador web fullstack junior", "Desarrollador de software junior", "Desarrollador de software", "Dearrollador web", "Dearrollador web fullstack"],
   creator: 'Frank Villachica',
   icons: {
-    icon: "/icons/icon-32.png",
+    icon: "/favicon.ico",
+    other: [
+      {
+        rel: "icon",
+        url: "/icons/icon-16.png",
+        type: "image/png",
+        sizes: "16x16"
+      },
+      {
+        rel: "icon",
+        url: "/icons/icon-32.png",
+        type: "image/png",
+        sizes: "32x32"
+      },
+      {
+        rel: "icon",
+        url: "/icons/icon-96.png",
+        type: "image/png",
+        sizes: "96x96"
+      }
+    ],
     shortcut: "/icons/icon-96.png",
-    apple: "/icons/icon-16.png"
+    apple: "/icons/icon-16.png",
   }
 }
 
