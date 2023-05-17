@@ -2,6 +2,7 @@ import { Navbar } from '@/components/Navbar'
 import './globals.css'
 import { Sen } from 'next/font/google'
 import { Footer } from '@/components/Footer'
+import { Metadata } from 'next'
 
 const sen = Sen(
   {
@@ -11,11 +12,16 @@ const sen = Sen(
   }
 )
 
-export const metadata = {
-  title: 'Frank Villachica Gaspar',
-  description: 'Hola soy Frank Villachica un desarrollador web FullStack Junior. Actualmente me encuentro en busca de nuevas oportunidades. Espero mi perfil sea lo que estas buscanndo y podamos trabajar juntos.',
+export const metadata: Metadata = {
+  title: 'Frank Villachica',
+  description: '¡Hola! Soy Frank Villachica, un apasionado desarrollador web en busca de emocionantes oportunidades laborales. Si estás buscando a alguien dedicado y creativo para unirse a tu equipo, ¡estás en el lugar correcto! Explora mi portfolio y descubre cómo mis habilidades y experiencia pueden contribuir a tu proyecto. ¡Trabajemos juntos para alcanzar grandes resultados!',
   keywords: ["Frank Villachica", "Frank Jordan Villachica Gaspar", "Frank Villachica Gaspar", "Desarrollador web junior", "Desarrollador web fullstack junior", "Desarrollador de software junior", "Desarrollador de software", "Dearrollador web", "Dearrollador web fullstack"],
-  creator: 'Frank Villachica Gaspar'
+  creator: 'Frank Villachica',
+  icons: {
+    icon: "/icons/icon-32.png",
+    shortcut: "/icons/icon-96.png",
+    apple: "/icons/icon-16.png"
+  }
 }
 
 export default function RootLayout({
