@@ -21,7 +21,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
 					<div className='flex flex-col-reverse md:flex-row gap-[30px]'>
 						<div className='w-[250px] min-w-[250px] h-[250px] relative mx-auto overflow-hidden rounded-md shadow-[-4px_4px_5px_2px_rgba(205,166,131,0.2)] rotate-1 hover:rotate-0 translate-y-2 hover:translate-y-0 transition-all delay-[100ms_easy-in]'>
 							<div className='w-full h-full bg-oceanblue bg-opacity-40 absolute z-10 hover:bg-opacity-0 transition-all delay-[100ms_easy-in]'></div>
-							<Image src={'https://res.cloudinary.com/furakam/image/upload/v1675621495/furafolio/profile/conejo_cirfwy.jpg'} fill alt='frankvillachica.png' className='z-0' />
+							<Image src={'/img/Furakam.jpeg'} fill alt='frankvillachica.png' className='z-0 object-cover' />
 						</div>
 						<div className='w-full max-w-[650px] flex flex-col gap-[30px]'>
 							<div className='flex flex-col gap-2'>
