@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   keywords: ["Frank Villachica", "Frank Jordan Villachica Gaspar", "Frank Villachica Gaspar", "Desarrollador web junior", "Desarrollador web fullstack junior", "Desarrollador de software junior", "Desarrollador de software", "Dearrollador web", "Dearrollador web fullstack"],
   creator: 'Frank Villachica',
   icons: {
+    icon: "/icons/favicon.ico",
     other: [
       {
         rel: "icon",
