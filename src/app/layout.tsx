@@ -44,6 +44,7 @@ export const metadata: Metadata = {
     apple: "/icons/icon-16.png",
   },
   openGraph: {
+    title: "Portafolio Web",
     images: [
       {
         url: "/opengraph-image.jpg",
