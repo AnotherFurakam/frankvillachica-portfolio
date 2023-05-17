@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "/icons/icon-96.png",
+        url: "https://frankvillachica.netlify.app/icons/icon-96.png",
         width: 96,
         height: 96,
       }
