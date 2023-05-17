@@ -13,12 +13,13 @@ const sen = Sen(
 )
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://frankvillachica.netlify.app/'),
   title: 'Frank Villachica',
   description: '¡Hola! Soy Frank Villachica, un apasionado desarrollador web en busca de emocionantes oportunidades laborales. Si estás buscando a alguien dedicado y creativo para unirse a tu equipo, ¡estás en el lugar correcto! Explora mi portfolio y descubre cómo mis habilidades y experiencia pueden contribuir a tu proyecto. ¡Trabajemos juntos para alcanzar grandes resultados!',
   keywords: ["Frank Villachica", "Frank Jordan Villachica Gaspar", "Frank Villachica Gaspar", "Desarrollador web junior", "Desarrollador web fullstack junior", "Desarrollador de software junior", "Desarrollador de software", "Dearrollador web", "Dearrollador web fullstack"],
   creator: 'Frank Villachica',
   icons: {
-    icon: "/icons/favicon.ico",
+    icon: "/favicon.ico",
     other: [
       {
         rel: "icon",
@@ -45,9 +46,8 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://frankvillachica.netlify.app/icons/icon-96.png",
-        width: 96,
-        height: 96,
+        url: "/opengraph-image.jpg",
+
       }
     ],
   }
