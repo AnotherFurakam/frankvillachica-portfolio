@@ -41,6 +41,15 @@ export const metadata: Metadata = {
     ],
     shortcut: "/icons/icon-96.png",
     apple: "/icons/icon-16.png",
+  },
+  openGraph: {
+    images: [
+      {
+        url: "/icons/icon-96.png",
+        width: 96,
+        height: 96,
+      }
+    ],
   }
 }
 
