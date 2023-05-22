@@ -68,7 +68,7 @@ const Projects: React.FC<ProjectsProps> = () => {
 	}, [])
 
 	return (
-		<article className='flex max-w-[1000px] mx-auto h-auto lg:h-[calc(100vh-70px)] min-h-[650px] px-4 lg:px-0 pb-[80px] md:pb-0 md:mb-[60px] pt-[20px] md:pt-[100px] overflow-hidden'>
+		<article className='flex max-w-[1000px] mx-auto h-auto lg:h-[calc(100vh-70px)] min-h-[750px] px-4 lg:px-0 pb-[80px] md:pb-0 md:mb-[60px] pt-[20px] md:pt-[100px] overflow-hidden'>
 			<Parent delayChildren={.2} staggerChildren={.2} className='w-full flex flex-col'>
 				<Reveal y={20} duration={.7}>
 					<div className='flex justify-between'>
