@@ -44,11 +44,18 @@ export const metadata: Metadata = {
     apple: "/icons/icon-16.png",
   },
   openGraph: {
-    title: "Portafolio Web",
+    title: "Portafolio Web - Frank Villachica",
+    description: "¡Hola! Soy un apasionado desarrollador web en busca de emocionantes oportunidades laborales. Explora mi portfolio y descubre cómo mis habilidades y experiencia pueden contribuir a tu proyecto.",
+    authors: ["Frank Villachica"],
+    gender: "Masculino",
+    emails: ["frankvillachica@outlook.com"],
+    url: "https://frankvillachica.netlify.app",
+    countryName: "Perú",
+    siteName:"Frank Villachica - Portfolio",
+    tags: ["Web developer","Desarrollador Web", "Junior Web developer","Junior programmer", "Frontend developer","Backend developer", "Desarrollador Web Junior"],
     images: [
       {
-        url: "/opengraph-image.jpg",
-
+        url: "/opengraph-image.png",
       }
     ],
   }
