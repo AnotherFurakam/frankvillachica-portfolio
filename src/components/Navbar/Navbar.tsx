@@ -7,6 +7,8 @@ import { AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
 import { Parent } from "../Animation/Appear/Parent";
 import { Children } from "../Animation/Appear/Children";
+import Image from "next/image";
+import NextLink from "next/link";
 
 export interface NavbarProps {
 }
@@ -60,7 +62,9 @@ const Navbar: React.FC<NavbarProps> = () => {
 			<Parent delayChildren={.2} staggerChildren={.2}>
 				<nav className="flex w-full justify-between p-[15px] h-[70px] items-center relative">
 					<Children duration={.7} x={10}>
-						<span className="text-electricblue text-[34px]">Furakam</span>
+						<NextLink href={'/'}>
+							<Image src={'/img/logo.svg'} className="hover:-translate-y-[3px] transition-[100ms_easeinout]" alt="logo.svg" width={50} height={50} />
+						</NextLink>
 					</Children>
 					{
 						!isOpenMobileMenu ?
