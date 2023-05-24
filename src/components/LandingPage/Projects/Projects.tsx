@@ -101,7 +101,7 @@ const Projects: React.FC<ProjectsProps> = () => {
 								autoHeight: true,
 							},
 							750: {
-								allowTouchMove: false,
+								allowTouchMove: true,
 								slidesPerView: 2,
 								slidesPerGroup: 2,
 								spaceBetween: 50,
@@ -112,7 +112,7 @@ const Projects: React.FC<ProjectsProps> = () => {
 								autoHeight: true,
 							},
 							1120: {
-								allowTouchMove: false,
+								allowTouchMove: true,
 								slidesPerView: 3,
 								slidesPerGroup: 3,
 								spaceBetween: 50,
