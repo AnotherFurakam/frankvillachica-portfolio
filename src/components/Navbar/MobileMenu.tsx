@@ -70,11 +70,11 @@ const MobileNavMenu: FC<MobileNavbarProps> = ({ closeHandler }) => {
             </Link>
           </Children>
         </li>
-        <Children duration={.05} x={20}>
+        {/* <Children duration={.05} x={20}>
           <div>
             <CurriculumBtn />
           </div>
-        </Children>
+        </Children> */}
       </motion.ul>
     </Parent>
   );

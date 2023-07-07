@@ -29,7 +29,7 @@
     "description": "Página web de una tienda de videojuegos. Proyecto realizado con HTML, Bootstrap y JavaScript con el fin de practicar maquetación web y mejorar el uso del framework CSS Bootstrap.",
     "technologies": ["Html 5","Bootstrap", "Javascript"],
     "github_link": "https://github.com/AnotherFurakam/PukYati",
-    "deploy_link": "https://pukyatiweb.netlify.app/soporte.html"
+    "deploy_link": "https://pukyatiweb.netlify.app"
   },
   {
     "id": 5,

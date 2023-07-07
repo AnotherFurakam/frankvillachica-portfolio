@@ -93,11 +93,11 @@ const Navbar: React.FC<NavbarProps> = () => {
 								<Link to="contacto" smooth duration={500} offset={100}>Contacto</Link>
 							</Children>
 						</li>
-						<li>
+						{/* <li>
 							<Children duration={.7} x={10}>
 								<CurriculumBtn />
 							</Children>
-						</li>
+						</li> */}
 					</ul>
 				</nav>
 			</Parent>
